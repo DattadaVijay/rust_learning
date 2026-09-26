@@ -62,5 +62,17 @@ fn main() {
     }else{
         println!("The incremental function did not work")
     }
+
+    let mut count = 0;
+
+    loop{
+
+        println!("The counter is {}", count);
+        count +=1;
+        if count == 5{
+           break;
+        }
+
+    }
     
 }
