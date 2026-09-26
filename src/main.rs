@@ -67,12 +67,19 @@ fn main() {
 
     loop{
 
-        println!("The counter is {}", count);
+        println!("The loop counter is {}", count);
         count +=1;
         if count == 5{
            break;
         }
 
+    }
+
+    let mut count = 0;
+
+    while count<5{
+        println!("The while loop counter is {}", count);
+        count+=1;
     }
     
 }
