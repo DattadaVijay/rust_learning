@@ -81,5 +81,19 @@ fn main() {
         println!("The while loop counter is {}", count);
         count+=1;
     }
+
+    for i in 1..5{
+        println!("for loop counter is {}",i)
+    }
     
+    // arrays generally dont grow or shrink it should be vec! for that
+    let mut numbers:[i32;4] = [10, 20, 30, 40];
+    println!("numbers array  =  {:?}", numbers);
+
+    let mut vec_numbers = vec![10, 20, 30, 40];
+    vec_numbers.push(50);
+    //we also can insert at specific loc in array
+    vec_numbers.insert(2, 21);
+    println!("vec_numbers = {:?}", vec_numbers);
+
 }
